@@ -109,6 +109,7 @@ input::-webkit-input-placeholder {
   border-left: 1px solid #3a3b3c;
   border-right: 1px solid #3a3b3c;
   padding: 0 10px;
+  position: relative;
 }
 
 .message__nav--items {
@@ -128,6 +129,18 @@ input::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.message__nav--message__user {
+  text-align: center;
+}
+
+.message__nav--message__user h3 {
+  margin-block-start: 3px;
+}
+
+.message__nav--message {
+  padding-top: 4rem;
 }
 
 /* ===== Right Na ===== */
@@ -164,6 +177,10 @@ input::-webkit-input-placeholder {
 }
 
 /* ==== input ======= */
+.input {
+  position: absolute;
+  bottom: -363px;
+}
 
 .input__container {
   display: flex;
@@ -195,4 +212,10 @@ input::-webkit-input-placeholder {
   width: 90%;
   padding-left: 13px;
   font-size: 16px;
+}
+
+.input__container--thum {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }

@@ -22,8 +22,10 @@ const Message = () => {
       </div>
 
       <div className="message__nav--message">
-        <img width="35px" src={user} alt="message-user" />
-        <h3>Mark Zuckerberg</h3>
+        <div className="message__nav--message__user">
+          <img width="35px" src={user} alt="message-user" />
+          <h3>Mark Zuckerberg</h3>
+        </div>
       </div>
       <Input />
     </div>
