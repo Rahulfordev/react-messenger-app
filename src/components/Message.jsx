@@ -11,7 +11,7 @@ const Message = () => {
       <div>
         <div className="message__nav--items">
           <div className="message__nav--users">
-            <img width="0px" src={user} alt="message-user" />
+            <img width="30px" src={user} alt="message-user" />
             <h3>Mark Zuckerberg</h3>
           </div>
 

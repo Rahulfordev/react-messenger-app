@@ -47,6 +47,51 @@ li {
   justify-content: center;
 }
 
+.left__search--items {
+  background-color: #3a3b3c;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left__search--items input {
+  background-color: transparent;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+.left__search--items input[type="text"] {
+  width: 80%;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.left__search--items input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #a2a9af;
+}
+
+.left__message--items {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.indox {
+  background-color: #233950;
+  color: #71b3f7;
+  padding: 9px 12px;
+  border-radius: 20px;
+}
+
 /* =====   message ==== */
 .message {
   border-left: 1px solid #3a3b3c;
@@ -58,6 +103,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px solid #1c1c1c;
 }
 
 .message__nav--users {

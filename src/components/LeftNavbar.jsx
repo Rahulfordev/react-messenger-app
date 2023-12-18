@@ -25,14 +25,14 @@ const LeftNavbar = () => {
         </div>
 
         <div className="left__search--items">
-          <div>
+          <div className="left__search--icon">
             <SearchIcon />
           </div>
           <input type="text" placeholder="Search Messenger" />
         </div>
 
         <div className="left__message--items">
-          <NavLink>Inbox</NavLink>
+          <NavLink className="indox">Inbox</NavLink>
           <NavLink>Communities</NavLink>
         </div>
 
