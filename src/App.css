@@ -5,6 +5,19 @@ body {
   height: calc(100vh - 16px);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
