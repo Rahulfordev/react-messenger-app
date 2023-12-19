@@ -11,7 +11,10 @@ const Message = () => {
       <div className="message__nav--items">
         <div className="message__nav--users">
           <img width="30px" src={user} alt="message-user" />
-          <h3>Mark Zuckerberg</h3>
+          <div className="message__nav--users__name">
+            <h3>Mark Zuckerberg</h3>
+            <p>Active 2 hours ago</p>
+          </div>
         </div>
 
         <div className="message__nav--icons">
@@ -25,30 +28,6 @@ const Message = () => {
         <div className="message__nav--message__user">
           <img width="35px" src={user} alt="message-user" />
           <h3>Mark Zuckerberg</h3>
-          <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
-            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
-            Corrupti provident perferendis quos architecto doloremque facere!
-            Veritatis dolorem corporis <br /> nostrum minima eveniet!
-          </h1>
-          <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
-            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
-            Corrupti provident perferendis quos architecto doloremque facere!
-            Veritatis dolorem corporis <br /> nostrum minima eveniet!
-          </h1>
-          <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
-            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
-            Corrupti provident perferendis quos architecto doloremque facere!
-            Veritatis dolorem corporis <br /> nostrum minima eveniet!
-          </h1>
-          <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
-            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
-            Corrupti provident perferendis quos architecto doloremque facere!
-            Veritatis dolorem corporis <br /> nostrum minima eveniet!
-          </h1>
         </div>
       </div>
       <Input />
