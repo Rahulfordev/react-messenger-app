@@ -91,6 +91,7 @@ input::-webkit-input-placeholder {
   gap: 15px;
   margin-top: 15px;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .active {
@@ -102,6 +103,29 @@ input::-webkit-input-placeholder {
   color: #71b3f7;
   padding: 9px 12px;
   border-radius: 20px;
+}
+
+/* === */
+.users__container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.left__user--content h4,
+p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.left__user--photo img {
+  border-radius: 50%;
+}
+
+.left__message--users {
+  overflow-y: auto;
+  height: 397px;
 }
 
 /* =====   message ==== */
@@ -141,6 +165,9 @@ input::-webkit-input-placeholder {
 
 .message__nav--message {
   padding-top: 4rem;
+  padding-top: 4rem;
+  overflow-y: auto;
+  height: 420px;
 }
 
 /* ===== Right Na ===== */
@@ -177,10 +204,10 @@ input::-webkit-input-placeholder {
 }
 
 /* ==== input ======= */
-.input {
+/* .input {
   position: absolute;
   bottom: -363px;
-}
+} */
 
 .input__container {
   display: flex;

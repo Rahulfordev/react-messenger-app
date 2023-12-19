@@ -25,6 +25,30 @@ const Message = () => {
         <div className="message__nav--message__user">
           <img width="35px" src={user} alt="message-user" />
           <h3>Mark Zuckerberg</h3>
+          <h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
+            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
+            Corrupti provident perferendis quos architecto doloremque facere!
+            Veritatis dolorem corporis <br /> nostrum minima eveniet!
+          </h1>
+          <h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
+            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
+            Corrupti provident perferendis quos architecto doloremque facere!
+            Veritatis dolorem corporis <br /> nostrum minima eveniet!
+          </h1>
+          <h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
+            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
+            Corrupti provident perferendis quos architecto doloremque facere!
+            Veritatis dolorem corporis <br /> nostrum minima eveniet!
+          </h1>
+          <h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, harum
+            asperiores <br /> modi recusandae est obcaecati <br /> quia officia.
+            Corrupti provident perferendis quos architecto doloremque facere!
+            Veritatis dolorem corporis <br /> nostrum minima eveniet!
+          </h1>
         </div>
       </div>
       <Input />

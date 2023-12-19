@@ -9,14 +9,16 @@ import UserApi from "./UserApi";
 
 const LeftNavbar = () => {
   const [users, setUser] = useState([]);
-
+  console.log(users);
   const url = "https://randomuser.me/api/?results=50";
 
   const userData = async (users) => {
     try {
       const responsive = await fetch(users);
       const data = await responsive.json();
-      setUser(data);
+      const females = data.results.filter((user) => user.gender === "male");
+      console.log(females);
+      setUser(females);
     } catch (error) {
       console.log(error);
     }
@@ -59,8 +61,7 @@ const LeftNavbar = () => {
 
         <div className="left__message--users">
           <div>
-            {users &&
-              users?.results?.map((user, i) => <UserApi user={user} key={i} />)}
+            {users && users.map((user, i) => <UserApi user={user} key={i} />)}
           </div>
         </div>
       </div>
