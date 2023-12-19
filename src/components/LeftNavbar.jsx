@@ -1,10 +1,31 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { FaEdit } from "react-icons/fa";
 import SearchIcon from "@mui/icons-material/Search";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import UserApi from "./UserApi";
 
 const LeftNavbar = () => {
+  const [users, setUser] = useState([]);
+
+  const url = "https://randomuser.me/api/?results=50";
+
+  const userData = async (users) => {
+    try {
+      const responsive = await fetch(users);
+      const data = await responsive.json();
+      setUser(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    userData(url);
+  }, []);
+
   return (
     <>
       <div className="left-nav">
@@ -37,7 +58,10 @@ const LeftNavbar = () => {
         </div>
 
         <div className="left__message--users">
-          <div>{/* single use */}</div>
+          <div>
+            {users &&
+              users?.results?.map((user, i) => <UserApi user={user} key={i} />)}
+          </div>
         </div>
       </div>
     </>
